@@ -1,6 +1,7 @@
 import dayjs from "dayjs"
 
 import { openingHours } from "../../utils/openning-hours.js"
+import { hoursClick } from "./hours-click.js"
 
 const hours = document.getElementById("hours")
 
@@ -12,6 +13,7 @@ export function hoursLoad({date}) {
 
     // Adicionar a hora na data e verificar se está no passado.
     const isHourPast = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs())
+
     return {
       hour,
       available: isHourPast,
@@ -37,6 +39,9 @@ export function hoursLoad({date}) {
 
     hours.append(li)
   })
+
+  // Adiciona o evento de clique nos horários disponíveis
+  hoursClick()
 }
 
 function hourHeaderAdd(title) {
