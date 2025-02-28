@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 
 // Seleciona as sessões manhã, tarde e noite.
-const periodMorning = document.getElementById("period-mornig")
+const periodMorning = document.getElementById("period-morning")
 const periodAfternoon = document.getElementById("period-afternoon")
 const periodNight = document.getElementById("period-night")
 
