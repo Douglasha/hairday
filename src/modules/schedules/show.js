@@ -8,7 +8,7 @@ const periodNight = document.getElementById("period-night")
 export function schedulesShow({dailySchedules}) {
   try {
     // Limpa as listas.
-    //periodMorning.innerHTML = ""
+    periodMorning.innerHTML = ""
     periodAfternoon.innerHTML = ""
     periodNight.innerHTML = ""
 
