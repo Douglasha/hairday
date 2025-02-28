@@ -17,7 +17,7 @@ export async function schedulesDay(){
   schedulesShow({dailySchedules})
 
   // Renderiza as horas disponíveis.
-  hoursLoad({ date })
+  hoursLoad({ date, dailySchedules })
 
 
   // Bucar na API os agendamentos para carregar do lado direito da tela
